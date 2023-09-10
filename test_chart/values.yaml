@@ -1,0 +1,4 @@
+app:
+  name: test
+  image: python
+  tag: 3.9.18
