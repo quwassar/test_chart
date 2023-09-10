@@ -32,6 +32,12 @@ test-chart-7c45fc8987-4chsn   0/1     Completed   2 (21s ago)   24s
 ➜  k8s-qubiq-cluster kubectl get pods -n test2
 NAME                          READY   STATUS      RESTARTS      AGE
 test-chart-7c45fc8987-bdcxc   0/1     Completed   2 (21s ago)   23s
+➜  k8s-qubiq-cluster helm list -n test
+NAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
+test    test            1               2023-09-10 11:56:38.533342 +0300 MSK    deployed        test-chart-0.0.1                   
+➜  k8s-qubiq-cluster helm list -n test2
+NAME    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
+test2   test2           1               2023-09-10 11:56:47.046756 +0300 MSK    deployed        test-chart-0.0.1
 ```
 
 Видим 2 рестарта, нормальное поведение при развёртывании фиктивного приложения
